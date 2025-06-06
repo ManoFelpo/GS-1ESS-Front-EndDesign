@@ -1,55 +1,83 @@
-# HydroSafe - Landing Page
+# HydroSafe - Landing Page Interativa
 
 ## 🌍 Descrição
 
-Esta landing page faz parte do projeto interdisciplinar da FIAP — **Global Solution 2025.1**. Ela apresenta o sistema **HydroSafe**, uma solução desenvolvida pela empresa fictícia *Elevate Consult* para combater enchentes em áreas urbanas por meio de tecnologia e monitoramento inteligente.
+Este projeto foi desenvolvido para a disciplina de **WebDev** da FIAP (Global Solution 2025.1), com o objetivo de aplicar os conhecimentos de HTML, CSS e JavaScript puro em uma página funcional, interativa e responsiva.
 
-Cada seção da página contém textos explicativos e **imagens ilustrativas**, seguindo as exigências do professor, com uma estrutura responsiva em **HTML e CSS puro**, sem o uso de frameworks.
-
----
-
-## 🧱 Tecnologias Utilizadas
-
-- HTML5
-- CSS3 (com Flexbox, variáveis CSS, Google Fonts e `scroll-behavior`)
-- Organização modular em pastas (`/css`, `/img`)
-- Navegação com rolagem suave (`scroll-margin-top`)
+A landing page apresenta a solução HydroSafe, proposta pela empresa fictícia *Elevate Consult*, voltada à prevenção de enchentes com sensores IoT e sistemas de alerta.
 
 ---
 
-## 🧭 Estrutura da Página
+## 🧱 Funcionalidades Implementadas
 
-A página é dividida em seis seções principais:
-
-1. **Problema** — Explica os impactos das enchentes.
-2. **Tecnologias** — Mostra o uso de sensores IoT, IA e mapas.
-3. **Objetivos** — Foca na prevenção, segurança e inteligência urbana.
-4. **Público-alvo** — Cidadãos em áreas de risco e órgãos públicos.
-5. **Benefícios** — Alertas, rotas, dados e redução de danos.
-6. **Aplicação no dia a dia** — Demonstra o uso prático da solução.
-
-Cada seção contém uma **imagem temática ilustrativa** e conteúdo objetivo.
+✅ Simulador de nível de água com mensagens dinâmicas  
+✅ Slideshow de 3 imagens temáticas  
+✅ Formulário com validação de campos obrigatórios  
+✅ Quiz interativo com 10 perguntas e resultado  
+✅ Botão para trocar a cor da barra de navegação  
+✅ Menu responsivo com botão hambúrguer (JavaScript puro)  
 
 ---
 
-## 📸 Imagens Utilizadas
+## 🧪 Tecnologias Utilizadas
 
-As imagens representam:
-
-- Monitoramento com sensores
-- Alertas de enchente em dispositivos móveis
-- Aplicações de IoT e tecnologia urbana
-- Cenas que remetem ao cotidiano e risco
+- HTML5 + CSS3 (Flexbox, Variáveis CSS, Media Queries)
+- JavaScript (vanilla JS)
+- Organização de código em pastas: `/css`, `/img`, `/js`
 
 ---
 
-## 🔧 Execução
+## 🚀 Como testar o projeto
 
-1. Baixe ou clone o repositório
-2. Abra o arquivo `index.html` no navegador
-3. Navegue pelas seções usando o menu fixo superior
+1. Baixe ou clone este repositório
+2. Abra o arquivo `index.html` em seu navegador
+3. Navegue pelas seções da página e teste os recursos interativos
 
-> A navegação rola suavemente até cada ponto da página com compensação de altura para o menu fixo.
+---
+
+## 🧠 Simulador de Nível de Água
+
+- Digite o nível em cm (ex: 250) e veja o estado da situação:
+  - **OK**: acima de 300 cm
+  - **Alerta**: entre 236 e 300 cm
+  - **PERIGO**: 235 cm ou menos
+
+---
+
+## 🧠 Quiz Interativo
+
+- 10 perguntas sobre enchentes, sensores e tecnologia
+- Mostra pontuação e cor de feedback (verde ou laranja)
+
+---
+
+## 🎨 Slideshow
+
+- 3 imagens rotativas com botões ❮ ❯
+- Feito com JavaScript puro e estilização personalizada
+
+---
+
+## 📱 Responsividade
+
+- Menu se adapta a celulares com botão hamburguer (☰)
+- Layout reorganiza elementos com `@media`
+
+---
+
+## 🌈 Troca de Cores
+
+- Botão dentro da `nav` permite mudar sua cor de fundo
+- Usa lista de cores controlada via JavaScript
+
+---
+
+## 🛠 Versionamento Git
+
+- Repositório criado com controle de versão no GitHub
+- Uso de branch `dev` e merge para `main`
+- 15 commits com histórico de evolução
+- Organização e boas práticas de commit
 
 ---
 
