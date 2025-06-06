@@ -152,7 +152,7 @@ function corrigirQuiz() {
     resultado.style.color = acertos >= 7 ? "green" : "orange";
 }
 
-//temas
+//Temas
 const botaoPrim = document.querySelector("#prim")
 botaoPrim.addEventListener("click", () => {
     document.body.className = ""
@@ -167,9 +167,9 @@ botaoClar.addEventListener("click", () => {
 })
 
 //Menu Haburguer
-  const menuToggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
 
-  menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener("click", () => {
     menu.classList.toggle("active");
-  });
+});
