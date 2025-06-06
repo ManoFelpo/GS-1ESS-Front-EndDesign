@@ -106,7 +106,6 @@ footer {
 }
 
 #simulador {
-    background-color: #eef6fa;
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
@@ -145,4 +144,45 @@ footer {
 
 .estado-perigo {
     color: red;
+}
+
+#slideshow {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 2rem;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 3px;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
