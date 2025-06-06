@@ -76,7 +76,6 @@ A landing page apresenta a solução HydroSafe, proposta pela empresa fictícia 
 
 - Repositório criado com controle de versão no GitHub
 - Uso de branch `dev` e merge para `main`
-- 15 commits com histórico de evolução
 - Organização e boas práticas de commit
 
 ---
@@ -86,7 +85,7 @@ A landing page apresenta a solução HydroSafe, proposta pela empresa fictícia 
 - **Nome:** Felipe Santos Nunes  
 - **RM:** 563919  
 - **Curso:** 1ESS 1º Semestre - FIAP  
-- **Disciplina:** Front-End Design  
+- **Disciplina:** Front-End Design  e WebDev
 - **Projeto:** Global Solution 2025.1
 
 ---
