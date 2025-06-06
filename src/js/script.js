@@ -165,3 +165,11 @@ const botaoClar = document.querySelector("#clar")
 botaoClar.addEventListener("click", () => {
     document.body.className = "claro"
 })
+
+//Menu Haburguer
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });

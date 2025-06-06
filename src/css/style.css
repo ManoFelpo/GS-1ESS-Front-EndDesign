@@ -50,36 +50,23 @@ header .titulo {
 nav {
     width: 100%;
     background-color: var(--primary);
-    padding: 1rem 0;
     position: fixed;
     top: 0;
     left: 0;
     align-items: center;
     z-index: 1000;
-}
-
-nav ul {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
 }
 
 nav ul li {
     transition: 200ms;
-    padding: 5px;
 }
 
 nav ul li:hover {
-    scale: 1.1;
-    background-color: #181251;
-    border-radius: 5px;
+    scale: 1.2;
 }
 
 nav .tema button {
@@ -105,6 +92,63 @@ nav .claro {
     background-image: url("../assets/imgs/temac.png");
     background-size: cover;
 }
+
+nav {
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .imgs img {
+        
+    max-height: 100px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 1rem;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
 
 main {
     padding: 2rem;
@@ -136,12 +180,14 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+@media (min-width: 400px) {
 
-.imgs img {
-    max-height: 200px;
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-right: 10px;
+    .imgs img {
+        max-height: 200px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
 }
 
 #simulador {
@@ -236,7 +282,8 @@ footer {
     padding: 2rem;
     border-radius: 10px;
     max-width: 600px;
-    margin: 1rem 35%;
+    min-width: 300px;
+    margin: 1rem auto;
 }
 
 #contato input,
