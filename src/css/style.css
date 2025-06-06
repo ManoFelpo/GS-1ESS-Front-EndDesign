@@ -41,6 +41,7 @@ nav {
     top: 0;
     left: 0;
     align-items: center;
+    z-index: 1000;
 }
 
 nav ul {
@@ -185,4 +186,33 @@ footer {
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+#contato {
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 1rem 35%;
+}
+
+#contato input, #contato textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contato button {
+  background-color: #0077b6;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resposta {
+  margin-top: 1rem;
+  font-weight: bold;
 }

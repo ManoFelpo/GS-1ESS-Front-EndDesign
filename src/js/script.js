@@ -41,3 +41,27 @@ function mudarSlide(n) {
 document.addEventListener("DOMContentLoaded", () => {
     mostrarSlide(slideIndex);
 });
+
+//Formulário
+  const form = document.getElementById('formContato');
+  const resposta = document.getElementById('resposta');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const mensagem = document.getElementById('mensagem').value.trim();
+
+    if (!nome || !email || !mensagem) {
+      resposta.style.color = "red";
+      resposta.textContent = "Por favor, preencha todos os campos.";
+    } else if (!email.includes('@') || !email.includes('.')) {
+      resposta.style.color = "red";
+      resposta.textContent = "Digite um e-mail válido.";
+    } else {
+      resposta.style.color = "green";
+      resposta.textContent = "Mensagem enviada com sucesso!";
+      form.reset();
+    }
+  });
