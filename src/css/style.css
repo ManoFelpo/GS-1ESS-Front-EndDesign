@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -34,13 +34,13 @@ header .titulo {
 }
 
 nav {
-  width: 100%;
-  background-color: var(--primary); /* cor de fundo escura */
-  padding: 1rem 0;
-  position: fixed; /* fixa no topo da tela */
-  top: 0;
-  left: 0;
-  align-items: center;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
 }
 
 nav ul {
