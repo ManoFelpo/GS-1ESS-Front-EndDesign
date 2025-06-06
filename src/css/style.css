@@ -16,6 +16,20 @@ html {
     --background: #ffffff;
 }
 
+.dark {
+    --primary: #131313;
+    --secondary: #ffffff;
+    --text: #ffffff;
+    --background: #585858;
+}
+
+.claro {
+    --primary: #091453;
+    --secondary: #2b2a68;
+    --text: #000000;
+    --background: #bccfec;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background);
@@ -30,7 +44,7 @@ header {
 }
 
 header .titulo {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 nav {
@@ -68,6 +82,30 @@ nav ul li:hover {
     border-radius: 5px;
 }
 
+nav .tema button {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+}
+
+nav .padrao {
+    background-image: url("../assets/imgs/temap.png");
+    background-size: cover;
+}
+
+nav .escuro {
+    background-image: url("../assets/imgs/temad.png");
+    background-size: cover;
+}
+
+nav .claro {
+    background-image: url("../assets/imgs/temac.png");
+    background-size: cover;
+}
+
 main {
     padding: 2rem;
     display: flex;
@@ -92,7 +130,7 @@ section p {
 }
 
 footer {
-    background: var(--secondary);
+    background: var(--primary);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -148,71 +186,120 @@ footer {
 }
 
 #slideshow {
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 2rem;
+    text-align: center;
+    padding: 2rem;
 }
 
 .slideshow-container {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
 }
 
 .slide {
-  display: none;
-  width: 100%;
-  border-radius: 10px;
+    display: none;
+    width: 100%;
+    border-radius: 10px;
 }
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 0.5rem;
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  background-color: rgba(0,0,0,0.5);
-  border: none;
-  border-radius: 3px;
-  user-select: none;
-  transform: translateY(-50%);
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 3px;
+    user-select: none;
+    transform: translateY(-50%);
 }
 
-.prev { left: 0; }
-.next { right: 0; }
+.prev {
+    left: 0;
+}
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #contato {
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 1rem 35%;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 1rem 35%;
 }
 
-#contato input, #contato textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 #contato button {
-  background-color: #0077b6;
-  color: white;
-  padding: 0.7rem 1.2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    background-color: #0077b6;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #resposta {
-  margin-top: 1rem;
-  font-weight: bold;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#quiz {
+    padding: 2rem;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    color: black;
+}
+
+#quiz h2 {
+    margin-bottom: 1rem;
+}
+
+#quiz button {
+    background-color: #0077b6;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#quizForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.pergunta {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#resultadoQuiz {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
 }

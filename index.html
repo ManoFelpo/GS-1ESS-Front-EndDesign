@@ -22,7 +22,13 @@
                 <li><a href="#simulador">Simulador</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+            <div class="tema">
+                <button class="padrao" id="prim"></button>
+                <button class="escuro" id="escu"></button>
+                <button class="claro" id="clar"></button>
+            </div>
         </nav>
+        
         <div class="titulo">
             <h1>HydroSafe</h1>
             <p>Sua cidade segura contra enchentes.</p>
@@ -104,6 +110,13 @@
                 <button class="next" onclick="mudarSlide(1)">❯</button>
             </div>
         </section>
+        </section>
+        <section id="quiz">
+            <h2>Quiz: Você está preparado para enchentes?</h2>
+            <form id="quizForm"></form>
+            <button onclick="corrigirQuiz()">Ver resultado</button>
+            <p id="resultadoQuiz"></p>
+        </section>
         <section id="contato">
             <h2>Fale Conosco</h2>
             <form id="formContato">
@@ -119,10 +132,6 @@
                 <button type="submit">Enviar</button>
                 <p id="resposta"></p>
             </form>
-        </section>
-        
-
-
 
     </main>
 
